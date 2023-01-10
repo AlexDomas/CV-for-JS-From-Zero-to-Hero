@@ -2,14 +2,82 @@
 <html>
 
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Domas Alex Aleksandrovich</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="main-page">
 
-    Resume - Domas Alex Aleksandrovich
+    <header class="main-page__header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <h1><a class="resume-title" href="index.html">Resume</a></h1>
+            <div class="nav-links" id="navigation">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">HOME</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="general-personal-info">
+            <img src="images/photome.png" />
+            <h1>Domas Alexey Aleksandrovich</h1>
+            <p>Web Developer</p>
+            <a href="" class="hero-btn">Visit Us To know more</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="about-me">
+
+            <h1> ABOUT ME </h1>
+            <p>Favorite quote: It's What You Do In The DASH... </p>
+
+            <div class="row">
+                <div class="about-me-column">
+                    <h3>Contact Information</h3>
+                    <p>Phone Number: +375445981954</br>
+                        Email: aleksej.domas@mail.ru</br>
+                    </p>
+                </div>
+                <div class="about-me-column">
+                    <h3>Education</h3>
+                    <p>I study at the 4th year of the Belarusian National Technical University</br>
+                        at the Faculty of Information Systems and Technologies</br>
+                        Graduation year: 2023</br>
+                    </p>
+                </div>
+                <div class="about-me-column">
+                    <h3>Interesting facts</h3>
+                    <p>I really like programming and I'm going to become a strong developer.
+                        </br>I'm a hard-working and honest team player.
+                        </br>I'm always willing to learn new skills.
+                        </br>I have an active lifestyle.
+                        </br>During my free time, I prefer to improve my skills via self-education.</br>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="campus">
+            
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
 
 </body>
 
