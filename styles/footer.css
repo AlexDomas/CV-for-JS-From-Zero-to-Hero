@@ -1,0 +1,37 @@
+:root{
+    --color-green: #00FA9A;
+    --color-white: #fff;
+}
+
+.main-page__footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    background: url(../images/abstraction/town.jpg) 100%;
+}
+
+.main-page__footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.main-page__footer p{
+    color: var(--color-white);
+}
+
+.icons .fa{
+    color: var(--color-green);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o{
+    color: var(--color-green);
+}

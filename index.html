@@ -4,7 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Domas Alex Aleksandrovich</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,51 +19,50 @@
 
 <body class="main-page">
     <header class="main-page__header">
-        <nav>
+        <nav class="main-page__navigation">
             <a href="index.html"><img src="images/logo.png"></a>
             <h2><a class="resume-title" href="index.html">Resume</a></h2>
-            <div class="nav-links" id="navigation">
+            <div class="main-page__nav-links" id="navigation">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#section-about-point">ABOUT ME</a></li>
-                    <li><a href="#section-project-point">PROJECTS</a></li>
-                    <li><a href="#section-hobby-point">HOBBIES</a></li>
-                    <li><a href="#footer-section-point">MOVE DOWN</a></li>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">HOME</a></li>
+                <ul class="menu menu-type-header">
+                    <li class="menu__item"><a href="#section-about-point">ABOUT ME</a></li>
+                    <li class="menu__item"><a href="#section-project-point">PROJECTS</a></li>
+                    <li class="menu__item"><a href="#section-hobby-point">HOBBIES</a></li>
+                    <li class="menu__item"><a href="#section-favourite-places-point">PLACES</a></li>
+                    <li class="menu__item"><a href="#footer-section-point">MOVE DOWN</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="general-personal-info">
-            <img src="images/photome.png" />
+        <div class="main-page__general-resume-info">
+            <img src="images/personal/photome.png" />
             <h1>Domas Alex Aleksandrovich</h1>
             <p>Web Developer</p>
-            <a href="#footer-section-point" class="hero-btn">Move down</a>
+            <a href="#footer-section-point" class="move-down-button">Move down</a>
         </div>
     </header>
 
-    <main>
-        <section class="about-me">
+    <main class="main-page__section-personal-info">
+        <section class="main-page__information-about-person">
             <a name="section-about-point">
                 <h1> ABOUT ME </h1>
             </a>
             <p>Favorite quote: It's What You Do In The DASH... </p>
-            <div class="row">
-                <div class="about-me-column">
+            <div class="main-page__row">
+                <div class="main-page__information-about-person-column">
                     <h3>Contact Information</h3>
                     <p>Phone Number: +375445981954</br>
                         Email: aleksej.domas@mail.ru</br>
                     </p>
                 </div>
-                <div class="about-me-column">
+                <div class="main-page__information-about-person-column">
                     <h3>Education</h3>
                     <p>I study at the 4th year of the Belarusian National Technical University</br>
                         at the Faculty of Information Systems and Technologies</br>
                         Graduation year: 2023</br>
                     </p>
                 </div>
-                <div class="about-me-column">
+                <div class="main-page__information-about-person-column">
                     <h3>Interesting facts</h3>
                     <p>I really like programming and I'm going to become a strong developer.
                         I love creative work and making great web applications.
@@ -73,11 +75,13 @@
             </div>
         </section>
 
-        <section class="project">
+        <section class="main-page__projects">
             <a name="section-project-point">
                 <h1>PROJECTS</h1>
             </a>
+            <p><b>My Repositories:</b> <a href="https://github.com/AlexDomas">GitHub Link</a></p>
             <h2>Course project Java EE «IShop»</h2>
+            <p><b>Repository:</b> <a href="https://github.com/AlexDomas/ishop_java_ee">GitHub Link</a></p>
             <p><b>Project description:</b> Online store of mobile devices.
                 The task was to develop a web application that
                 allows select and buy mobile device.</br>
@@ -88,27 +92,28 @@
                 JUnit,
                 jQuery, HTML, CSS.
             </p>
-            <div class="row">
-                <div class="project-column">
-                    <img src="images/project1-1.png">
+            <div class="main-page__row">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project1-1.PNG">
                     <div class="layer-project1">
                         <h3>START PAGE WITH HEADER AND SLIDER</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project1-2.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project1-2.PNG">
                     <div class="layer-project1">
                         <h3>PRODUCTS WITH CATEGORIES, FILTER AND SEARCH</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project1-3.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project1-3.PNG">
                     <div class="layer-project1">
                         <h3>ISHOP FOOTER</h3>
                     </div>
                 </div>
             </div>
             <h2>Spring MVC Project «Shop»</h2>
+            <p><b>Repository:</b> <a href="https://github.com/AlexDomas/spring_project_shop">GitHub Link</a></p>
             <p><b>Project description:</b> Online store of electronic devices.
                 The task was to develop a web application that
                 allows select and buy electronic device.
@@ -120,115 +125,122 @@
                 </br><b>Technologies:</b> Java Core, Spring MVC, Spring Security, Spring Web Flow, Spring Mail API,
                 Hibernate Core, Hibernate Validator, PSQL, JQuery, HTML, CSS.
             </p>
-            <div class="row">
-                <div class="project-column">
-                    <img src="images/project2-1.png">
+            <div class="main-page__row">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project2-1.PNG">
                     <div class="layer-project2">
                         <h3>START PAGE WITH HEADER AND SLIDER</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project2-2.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project2-2.PNG">
                     <div class="layer-project2">
                         <h3>EXAMPLE OF SERVICES</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project2-3.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project2-3.PNG">
                     <div class="layer-project2">
                         <h3>AVAILABLE PRODUCTS</h3>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="project-column">
-                    <img src="images/project2-4.png">
+            <div class="main-page__row">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project2-4.PNG">
                     <div class="layer-project2">
                         <h3>FOOTER WITH THE PART SUBMIT FORM</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project2-5.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project2-5.PNG">
                     <div class="layer-project2">
                         <h3>SLIDER ON CONTACT PAGE</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project2-6.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project2-6.PNG">
                     <div class="layer-project2">
                         <h3>LOGIN PAGE</h3>
                     </div>
                 </div>
             </div>
             <h2>Spring Boot Project - Questionnaire Portal (Practice in Softarex Technologies)</h2>
+            <p><b>Repository frontend:</b> <a href="https://github.com/AlexDomas/questionnaire-portal-frontend">GitHub
+                    Link</a></p>
+            <p><b>Repository backend:</b> <a href="https://github.com/AlexDomas/Questionnaire_portal">GitHub Link</a>
+            </p>
             <p><b>Project description:</b> The application gives the user the opportunity to log in using, register,
                 create, change, delete fields and a questionnaire, answer a questionnaire, change information in a
                 personal account, change a password.</br>
                 <b>Technologies:</b> Java Core, Spring Boot, Spring Security, Spring Email API, Spring Data JPA,
                 WebSocket, Hibernate Core, Hibernate Validator, PSQL, ReactJS, JWT - Authentication.
             </p>
-            <div class="row">
-                <div class="project-column">
-                    <img src="images/project3-1.png">
+            <div class="main-page__row">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project3-1.PNG">
                     <div class="layer-project3">
                         <h3>START PAGE WITH HEADER AND SLIDER</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project3-2.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project3-2.PNG">
                     <div class="layer-project3">
                         <h3>FIELDS</h3>
                     </div>
                 </div>
-                <div class="project-column">
-                    <img src="images/project3-3.png">
+                <div class="main-page__project-column">
+                    <img src="images/projects/project3-3.PNG">
                     <div class="layer-project3">
                         <h3>QUESTIONNAIRE FORM</h3>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="hobby">
+        <section class="main-page__hobbies">
             <a name="section-hobby-point">
                 <h1>Hobbies</h1>
             </a>
-            <div class="row">
-                <div class="hobby-column">
-                    <img src="images/reading.jpg">
+            <div class="main-page__row">
+                <div class="main-page__hobby-column">
+                    <img src="images/hobbies/reading.jpg">
                     <h3>Reading</h3>
                 </div>
-                <div class="hobby-column">
-                    <img src="images/programming.jpg">
+                <div class="main-page__hobby-column">
+                    <img src="images/hobbies/programming.jpg">
                     <h3>Programming</h3>
                 </div>
-                <div class="hobby-column">
-                    <img src="images/training.jpg">
+                <div class="main-page__hobby-column">
+                    <img src="images/hobbies/training.jpg">
                     <h3>Training</h3>
                 </div>
             </div>
+            <a name="section-favourite-places-point">
+                <h1>FAVOURITE PLACES</h1>
+            </a>
         </section>
-        <section class="main-section__slider">
+
+        <section class="main-page__slider">
             <div class="slider">
                 <div class="slides">
 
-                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio1" checked>
                     <input type="radio" name="radio-btn" id="radio2">
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
 
                     <div class="slide first">
-                        <img src="images/landscape.jpg" alt="1">
+                        <img src="images/places/lake-ontario.jpg" alt="lake-ontario">
                     </div>
                     <div class="slide">
-                        <img src="images/town.jpg" alt="2">
+                        <img src="images/places/london.jpg" alt="london">
                     </div>
                     <div class="slide">
-                        <img src="images/town.jpg" alt="3">
+                        <img src="images/places/new-york.jpeg" alt="new-york">
                     </div>
                     <div class="slide">
-                        <img src="images/town.jpg" alt="4">
+                        <img src="images/places/japan.jpg" alt="japan">
                     </div>
-
                     <div class="navigation-auto">
                         <div class="auto-btn1"></div>
                         <div class="auto-btn2"></div>
@@ -243,7 +255,6 @@
                     <label for="radio3" class="manual-btn"></label>
                     <label for="radio4" class="manual-btn"></label>
                 </div>
-                
             </div>
         </section>
     </main>
@@ -254,11 +265,11 @@
         </a>
         <p>The Story About Me</p>
         <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
+            <a href="https://www.facebook.com/profile.php?id=100075863498808"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/AlexDomas"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/domasalex/"><i class="fa fa-instagram"></i></a>
             <i class="fa fa-linkedin"></i>
-            <i class="fa fa-vk"></i>
+            <a href="https://vk.com/id180485053"><i class="fa fa-vk"></i></a>
         </div>
         <p>Made by Alex Domas with <i class="fa fa-heart-o"></i></p>
     </footer>

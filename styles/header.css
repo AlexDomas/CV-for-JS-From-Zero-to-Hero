@@ -1,0 +1,128 @@
+:root{
+    --color-green: #00FA9A;
+    --color-pink: #FF1493;
+    --color-white: #fff;
+    --color-black: #000;
+}
+
+.main-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-page__header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(../images/abstraction/landscape.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.resume-title {
+    margin-left: 10px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.resume-title:hover{
+    margin-left: 10px;
+    width: 100%;
+    color: var(--color-green);
+}
+
+.main-page__navigation{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page__navigation img {
+    width: 90px;
+}
+
+.main-page__nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.main-page__nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 13px;
+    position: relative;
+   
+}
+
+.main-page__nav-links ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.main-page__nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--color-green);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.main-page__nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.main-page__general-resume-info {
+    width: 90%;
+    color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-page__general-resume-info h1 {
+    font-size: 35px;
+}
+
+.main-page__general-resume-info p {
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: var(--color-white);
+}
+
+.main-page__general-resume-info img{
+    border-radius: 50%;
+}
+
+.main-page__general-resume-info img:hover{
+    width: 30%;
+    box-shadow: 0px 0px 10px var(--color-white);
+}
+
+.move-down-button{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    padding: 12px 34px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.move-down-button:hover{
+    border: 1px solid var(--color-pink);
+    background: var(--color-pink);
+    transition: 1s;
+    color: var(--color-black);
+}
