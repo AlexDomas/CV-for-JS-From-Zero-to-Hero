@@ -4,7 +4,7 @@
     --color-orange: #f44336;
 }
 
-*{
+html, .main-page{
     overflow-x: hidden;
 }
 
