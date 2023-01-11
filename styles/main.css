@@ -4,6 +4,10 @@
     --color-orange: #f44336;
 }
 
+*{
+    overflow-x: hidden;
+}
+
 .main-page {
     margin: 0;
     padding: 0;
