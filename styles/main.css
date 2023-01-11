@@ -110,7 +110,7 @@ h3{
 }
 
 @media screen and (max-width: 700px){
-    .row{
+    .main-page__row{
         flex-direction: column;
     }
 }
