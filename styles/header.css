@@ -5,10 +5,15 @@
     --color-black: #000;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 .main-page {
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
 }
 
 .main-page__header {

@@ -4,16 +4,6 @@
     --color-orange: #f44336;
 }
 
-html, .main-page{
-    overflow-x: hidden;
-}
-
-.main-page {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-}
-
 nav .fa{
     display: none;
 }
